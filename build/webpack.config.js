@@ -16,8 +16,12 @@ const defaultPlugins = [
 ]
 const devServer = {
     port: 8000,
-    host: '0.0.0.0',
-    open: 'Chrome'
+    host: '127.0.0.1',
+    open: 'Chrome',
+    overlay: {
+        warnings: true,
+        errors: true
+    }
 }
 
 let config

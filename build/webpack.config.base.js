@@ -14,6 +14,36 @@ const config = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader'
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'resources/[path][name].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(gif|jpg|jpeg|png|svg)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 1024,
+                            name: 'resources/[path][name].[ext]'
+                        }
+                    }
+                ]
             }
         ]
     }
