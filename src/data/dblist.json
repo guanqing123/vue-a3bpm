@@ -1,0 +1,126 @@
+{
+  "msg": "成功",
+  "list": [
+    {
+      "ShenQingSJ": "2019-03-04",
+      "DanJuLeiXing": "2",
+      "DangQianJD": "填报人",
+      "ShenQingR": "测试0103",
+      "LiuChengId": "201758155031.9850036",
+      "RenWuID": "9850047",
+      "DanJuBH": "ZXSQ201903040002",
+      "ShenQingBM": "办公室",
+      "LeiXing": "",
+      "BiaoTi": "申请金额:100.00元"
+    },
+    {
+      "ShenQingSJ": "2019-01-21",
+      "DanJuLeiXing": "2",
+      "DangQianJD": "申请人",
+      "ShenQingR": "测试0103",
+      "LiuChengId": "20191219457.9690108",
+      "RenWuID": "9690179",
+      "DanJuBH": "ZXSQ201901210022",
+      "ShenQingBM": "办公室",
+      "LeiXing": "",
+      "BiaoTi": "申请金额:33.00元"
+    },
+    {
+      "ShenQingSJ": "2018-12-25",
+      "DanJuLeiXing": "1",
+      "DangQianJD": "测试0103",
+      "ShenQingR": "测试0106",
+      "LiuChengId": "20171026112232.9400266",
+      "RenWuID": "9400268",
+      "DanJuBH": "BXBHM181225132745375",
+      "ShenQingBM": "采购办由财务对已审核的拨付申请单审定",
+      "LeiXing": "1",
+      "BiaoTi": "印刷费 10.00元"
+    },
+    {
+      "ShenQingSJ": "2018-12-25",
+      "DanJuLeiXing": "1",
+      "DangQianJD": "测试0103",
+      "ShenQingR": "测试0106",
+      "LiuChengId": "20171026112232.9400382",
+      "RenWuID": "9400384",
+      "DanJuBH": "BXBHM181225162152095",
+      "ShenQingBM": "采购办由财务对已审核的拨付申请单审定",
+      "LeiXing": "4",
+      "BiaoTi": "印刷费 10.00元"
+    },
+    {
+      "ShenQingSJ": "2018-12-10",
+      "DanJuLeiXing": "1",
+      "DangQianJD": "测试0103",
+      "ShenQingR": "测试0106",
+      "LiuChengId": "20171026112232.9170075",
+      "RenWuID": "9170077",
+      "DanJuBH": "BXBH201812100005",
+      "ShenQingBM": "采购办由财务对已审核的拨付申请单审定",
+      "LeiXing": "1",
+      "BiaoTi": "社会保障缴费 88.00元"
+    },
+    {
+      "ShenQingSJ": "2018-12-04",
+      "DanJuLeiXing": "1",
+      "DangQianJD": "测试0103",
+      "ShenQingR": "测试0106",
+      "LiuChengId": "20171026112232.9020118",
+      "RenWuID": "9020120",
+      "DanJuBH": "BXBH201812040001",
+      "ShenQingBM": "采购办由财务对已审核的拨付申请单审定",
+      "LeiXing": "3",
+      "BiaoTi": "项目考核奖金 100.00元"
+    },
+    {
+      "ShenQingSJ": "2018-12-03",
+      "DanJuLeiXing": "1",
+      "DangQianJD": "测试0103",
+      "ShenQingR": "测试0103",
+      "LiuChengId": "20171026112232.9020023",
+      "RenWuID": "9020032",
+      "DanJuBH": "BXBH201812030001",
+      "ShenQingBM": "办公室",
+      "LeiXing": "1",
+      "BiaoTi": "项目考核奖金 100.00元"
+    },
+    {
+      "ShenQingSJ": "2018-11-21",
+      "DanJuLeiXing": "2",
+      "DangQianJD": "填报人",
+      "ShenQingR": "测试0103",
+      "LiuChengId": "201812162419.8860050",
+      "RenWuID": "8860061",
+      "DanJuBH": "ZXSQ201811210001",
+      "ShenQingBM": "办公室",
+      "LeiXing": "",
+      "BiaoTi": "申请金额:100.00元"
+    },
+    {
+      "ShenQingSJ": "2018-11-16",
+      "DanJuLeiXing": "2",
+      "DangQianJD": "填报人",
+      "ShenQingR": "测试0103",
+      "LiuChengId": "201758155031.8830067",
+      "RenWuID": "9070001",
+      "DanJuBH": "ZXSQ201811160004",
+      "ShenQingBM": "办公室",
+      "LeiXing": "",
+      "BiaoTi": "申请金额:400.00元"
+    },
+    {
+      "ShenQingSJ": "2018-11-09",
+      "DanJuLeiXing": "2",
+      "DangQianJD": "申请人",
+      "ShenQingR": "测试0103",
+      "LiuChengId": "2018322161849.8640044",
+      "RenWuID": "8640071",
+      "DanJuBH": "ZXSQ201811090001",
+      "ShenQingBM": "办公室",
+      "LeiXing": "",
+      "BiaoTi": "申请金额:100.00元"
+    }
+  ],
+  "msgCode": "1"
+}
