@@ -1,5 +1,7 @@
 <template>
-    $END$
+    <p>
+        执行:{{$route.params.todo}}
+    </p>
 </template>
 
 <script>

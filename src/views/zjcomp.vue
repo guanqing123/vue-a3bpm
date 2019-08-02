@@ -1,5 +1,7 @@
 <template>
-    $END$
+    <div>
+        资金:{{$route.params.todo}}
+    </div>
 </template>
 
 <script>

@@ -7,43 +7,21 @@
                         <div class="weui-tab__panel">
                             <div class="list-block">
                                 <ul id="lists" class="list-container lists" v-for="todo in todos">
+                                    <!--1:报销单 ,2:执行申请 ,3:资金申请-->
                                     <li v-if="todo.DanJuLeiXing==='1'">
-                                        <a class='listItem' :rwid='todo.RenWuID' :jd='todo.DangQianJD'>
-                                            <i><span style='color:#1e90ff' class="iconfont">&#xe721;</span></i>
-                                            <div class="listsInfo">
-                                                <h4>{{todo.BiaoTi}}</h4>
-                                                <div class="clearfix">
-                                                    <span v-if="todo.ShenQingBM!=''">{{todo.ShenQingBM}}/{{todo.ShenQingR}}</span>
-                                                    <time class="fr">{{todo.ShenQingSJ}}</time>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <todo :to="{name:'bxcomp',params:{todo:todo}}" :todo="todo">
+                                            <i><span class="iconfont icon-baoxiao"></span></i>
+                                        </todo>
                                     </li>
-
                                     <li v-if="todo.DanJuLeiXing==='2'">
-                                        <a class='zxApply' :rwid='todo.RenWuID' :jd='todo.DangQianJD'>
-                                            <i><span style='color:#34dbe4' class=\"iconfont\">&#xe637;</span></i>
-                                            <div class="listsInfo">
-                                                <h4>{{todo.BiaoTi}}</h4>
-                                                <div class="clearfix">
-                                                    <span v-if="todo.ShenQingBM!=''">{{todo.ShenQingBM}}/{{todo.ShenQingR}}</span>
-                                                    <time class="fr">{{todo.ShenQingSJ}}</time>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <todo :to="{name:'zxcomp',params:{todo:todo}}" :todo="todo">
+                                            <i><span class="iconfont icon-zhixing"></span></i>
+                                        </todo>
                                     </li>
-
                                     <li v-if="todo.DanJuLeiXing==='3'">
-                                        <a class='listItem' :rwid='todo.RenWuID' :jd='todo.DangQianJD'>
-                                            <i><span style='color:#fe75ff' class=\"iconfont\">&#xe653;</span></i>
-                                            <div class="listsInfo">
-                                                <h4>{{todo.BiaoTi}}</h4>
-                                                <div class="clearfix">
-                                                    <span v-if="todo.ShenQingBM!=''">{{todo.ShenQingBM}}/{{todo.ShenQingR}}</span>
-                                                    <time class="fr">{{todo.ShenQingSJ}}</time>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <todo :to="{name:'zjcomp',params:{todo:todo}}" :todo="todo">
+                                            <i><span class="iconfont icon-zijin"></span></i>
+                                        </todo>
                                     </li>
                                 </ul>
                             </div>
@@ -65,24 +43,36 @@
 </template>
 
 <script>
+    import todo from '../components/todo.vue'
     export default {
         name: "todo-list",
         beforeRouteEnter (to, from, next) {
-            next(vm => {
-                vm.$http.get('http://127.0.0.1:8000/src/data/dblist.json').then(res => {
-                    // debugger
-                    vm.todos = res.body.list
-                })
-            })
+            // next(vm => {
+            //     debugger
+            //     vm.$http.get('static/data/dblist.json').then(res => {
+            //         vm.todos = res.body.list
+            //     })
+            // })
+            next();
+        },
+        components: {
+            "todo": todo
         },
         data () {
             return {
                 todos: []
             }
+        },
+        created() {
+            let _this = this
+            this.$http.get('static/data/dblist.json').then(res => {
+                //_this.todos = res.body.list
+                _this.$set(_this,'todos', res.body.list)
+            })
         }
     }
 </script>
 
-<style scoped>
-
+<style lang="css" scoped>
+@import "../assets/fonts/iconfont.css";
 </style>
