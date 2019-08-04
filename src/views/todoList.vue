@@ -74,5 +74,5 @@
 </script>
 
 <style lang="css" scoped>
-@import "../assets/fonts/iconfont.css";
+@import "../assets/styles/iconfont.css";
 </style>
