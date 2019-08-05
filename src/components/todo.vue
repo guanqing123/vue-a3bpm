@@ -1,18 +1,16 @@
 <template>
-    <div>
-        <router-link :to="to">
-        <!--<a class='listItem' :rwid='todo.RenWuID' :jd='todo.DangQianJD'>-->
-            <!--<i><span class="iconfont icon-baoxiao"></span></i>-->
-            <slot></slot>
-            <div class="listsInfo">
-            <h4>{{todo.BiaoTi}}</h4>
-                <div class="clearfix">
-                    <span v-if="todo.ShenQingBM!=''">{{todo.ShenQingBM}}/{{todo.ShenQingR}}</span>
-                    <time class="fr">{{todo.ShenQingSJ}}</time>
-                </div>
+    <router-link :to="to">
+        <div class="mui-table">
+            <div class="mui-table-cell mui-col-xs-9">
+                <slot></slot>
+                <h5 class="mui-ellipsis">{{todo.BiaoTi}}</h5>
+                <p class="mui-h6 mui-ellipsis" v-if="todo.ShenQingBM!=''">{{todo.ShenQingBM}}/{{todo.ShenQingR}}</p>
             </div>
-        </router-link>
-    </div>
+            <div class="mui-table-cell mui-col-xs-3 mui-text-right mui-text-bottom">
+                <span class="mui-h6">{{todo.ShenQingSJ}}</span>
+            </div>
+        </div>
+    </router-link>
 </template>
 
 <script>
@@ -32,5 +30,10 @@
 </script>
 
 <style scoped>
-
+.mui-text-bottom {
+    vertical-align: bottom;
+}
+h5{
+    color: black;
+}
 </style>

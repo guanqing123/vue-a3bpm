@@ -34,6 +34,6 @@
 
 <style scoped>
 .zmui-icon {
-    font-size: 2.0em;
+    font-size: 1.6em;
 }
 </style>
