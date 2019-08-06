@@ -15,7 +15,7 @@ const defaultPlugins = [
     new VueLoaderPlugin()
 ]
 const devServer = {
-    port: 8000,
+    port: 9999,
     host: '0.0.0.0',
     open: 'Chrome',
     overlay: {
